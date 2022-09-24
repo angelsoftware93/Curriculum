@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+}
+.principalSheet {
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) 3fr;
+    grid-auto-rows: 100px;
+}
+
+.profileFrame {
+    margin: 30px auto;
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 100%;
+    overflow: hidden;
+} 
+
+.profileFrame img {
+    height: 100%;
+}
+
+.presentation {
+    position: relative;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    text-align: left;
+    display: table;
+}
+
+.presentation p {
+    position: absolute;
+    transform: translate(0, -50%);
+    margin:0 auto;
+    top: 50%;
+}
+
+.presentation .name {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.presentation .surname {
+    font-size: xx-large;
+    font-weight: bolder;
+}
